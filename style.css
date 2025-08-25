@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: #e5e5e5;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 184px;
+}
+
+.head-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 25px 184px;
+    background-color: white;
+}
+
+.main-btn {
+    border-radius: 4px;
+    width: 150px;
+    background: #0d75ff;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    padding: 12px 54px;
+}
+
+.cards {
+    display: flex;
+    margin: 50px 184px;
+
+}
+
+.card {
+    width: 280px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border: 0px solid #e3e6eb;
+    border-radius: 5px;
+}
+
+.links {
+    text-decoration: none;
+    list-style: none;
+}
+
+.book-img {
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.book-type {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.author {
+    font-weight: 500;
+    font-size: 13px;
+    color: #757881;
+    padding-left: 20px;
+    padding-top: 5px;
+
+}
+
+.buttons {
+    margin: 4px 20px;
+    
+
+}
+
+.btn {
+    background: #ffd80d;
+    border-radius: 4px;
+    width: 115px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+    padding: 10px 20px;
+    gap: 10px;
+
+}
+
+.btn2 {
+    background: rgba(13, 117, 255, 0.05);
+    border-radius: 4px;
+    width: 115px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+    padding: 10px 20px;
+
+}
+
+.btn3 {
+    border-radius: 4px;
+    width: 240px;
+    height: 37px;
+    background: #75828a;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 102px;
+}
