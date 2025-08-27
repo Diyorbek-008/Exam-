@@ -8,10 +8,10 @@ function chiqar(data) {
 
         tr.innerHTML = `
             <td>${item.id}</td>
-            <td>${item.ism}</td>
-            <td>${item.familiya}</td>
-            <td><img src=${item.rasm} alt="" width="80px"></td>
-            <td>${item.mahallasi}</td>
+            <td>${item.KitobNomi}</td>
+            <td>${item. Yozuvchisi}</td>
+            <td><img src=${item. Yili} alt="" width="80px"></td>
+            <td>${item.rasm}</td>
             <td>
                 <div class="amallar">
                     <img onclick="showDeleteModal(${item.id})" src="https://icons.veryicon.com/png/o/commerce-shopping/soft-designer-online-tools-icon/delete-77.png" alt="delete-icon" width="50px">
@@ -36,10 +36,10 @@ form.addEventListener("submit", (e) => {
 
     let newPerson = {
         id: data.length==0 ? 1 : data[data.length - 1].id + 1,
-        ism: document.getElementById("ism").value,
-        familiya: document.getElementById("familiya").value,
+        ism: document.getElementById("KitobNomi").value,
+        familiya: document.getElementById("Yozuvchisi").value,
         rasm: URL.createObjectURL(imageInput.files[0]),
-        mahallasi: document.getElementById("mahalla").value
+        mahallasi: document.getElementById("Yili").value
     }
 
     data.push(newPerson)
