@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Modal</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Global styles for body (to ensure full-screen background) */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            background: url("./images/Login.jpg") no-repeat center center fixed;
+            background-size: cover;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body {
+            font-family: "Rubik", sans-serif;
+        }
+
+        /* Modal box */
+        .modal {
+            width: 300px;
+            height: 323px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        /* Form layout */
+        .form {
+            margin-top: 50px;
+        }
+
+        /* Input box container */
+        .input-box {
+            position: relative;
+            width: 300px !important;
+            height: 45px;
+        }
+
+        /* Input icons */
+        .input-image {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+        }
+
+        /* Input fields */
+        .input {
+            height: 100%;
+            padding-left: 50px;
+            width: 300px !important;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            outline: none;
+            background-color: transparent;
+            color: #fff;
+        }
+
+        .input::placeholder {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 143%;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        /* Login button */
+        .btn {
+            width: 300px;
+            height: 45px;
+            border-radius: 4px;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+            background: #fff;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 125%;
+            text-transform: uppercase;
+            text-align: center;
+            color: #0d75ff;
+            margin-top: 40px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="modal">
+        <img src="./images/Group 200.png" alt="logo" />
+
+        <form class="form" onsubmit="loginFunc(event)">
+            <div class="input-box">
+                <img class="input-image" src="./images/user.png" alt="user" />
+                <input class="input" type="text" placeholder="USERNAME" required id="username" />
+            </div>
+
+            <div class="input-box" style="margin-top: 20px;">
+                <img class="input-image" src="./images/lock.png" alt="user" />
+                <input class="input" type="password" placeholder="Password" required id="password" />
+            </div>
+
+            <button class="btn" type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function loginFunc(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            console.log("Username:", username, "Password:", password);
+        }
+    </script>
+
+</body>
+
+</html>
