@@ -16,7 +16,7 @@
 <body>
     <div class="box">
         <div class="box-head">
-            <h2 class="heading"></h2>
+            <h2 class="heading">Kitoblar</h2>
             <button class="btn" onclick="showAddModal()">Yangi qo'shish</button>
         </div>
 
@@ -28,6 +28,7 @@
                     <th>Yozuvchisi</th>
                     <th>Yili</th>
                     <th>Rasmi</th>
+                    <th>Kitob linki</th>
                     <th>Amallar</th>
                 </tr>
             </thead>
@@ -43,10 +44,11 @@
         <div class="overlay" onclick="removeAddModal()"></div>
 
         <form class="form" id="form">
-            <input type="text" id="KitobNomi" placeholder="KitobNomi">
-            <input type="text" id="Yozuvchisi" placeholder="Yozuvchisi">
+            <input type="text" id="KitobNomi" placeholder="Kitob nomi">
+            <input type="text" id="Yozuvchisi" placeholder="Author ismi">
             <input type="text" id="Yili" placeholder="Yili">
-            <input type="file" id="file" placeholder="rasmni tanlang..." accept="image/*">
+            <input type="url" id="file" placeholder="rasmning linki..." accept="image/*">
+            <input type="url" id="link" placeholder="link kiriting">
 
             <button class="btn" type="submit">Qo'shish</button>
         </form>

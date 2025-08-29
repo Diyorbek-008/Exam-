@@ -19,10 +19,14 @@ body {
     border-collapse: collapse;
     text-align: center;
     font-size: 24px;
+
 }
 
 tr,td,th {
     padding: 4px;
+    text-decoration: none;
+    list-style: none;
+
 }
 
 
@@ -49,7 +53,7 @@ tr,td,th {
     padding: 20px;
     width: 400px;
     /* background-color: darkgray; */
-    margin: 20px auto; 
+    margin: 20px auto;
 }
 
 .form {
@@ -72,6 +76,7 @@ tr,td,th {
     border: 1px solid black;
     border-radius: 4px;
     font-size: 16px;
+
 }
 
 .form .btn {
